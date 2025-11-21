@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Registration form</title>
+</head>
+<body>
+    <form id="Registration Event">
+        <h2>Register Event</h2>
+
+        <label for="name">User Name</label>
+        <input type="text" ,id="name",name ="name" required>
+
+        <label for="email">E mail</label>
+        <input type="email" ,id="email",name ="email" required>
+
+        <label for="event">Select Event</label>
+        <select id="event" name="event" required>
+            <option id="Robotics">Robotics</option>
+            <option id="Coding">Coding</option>
+            <option id="AI">AI</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("Registration Event").addEventListener("submit",function(e){
+            e.preventDefault();
+            alert("Registeration Successful"+documet.getElementById("name").value+"!");
+            this.reset
+        })
+    </script>
+</body>
+
+</html>
